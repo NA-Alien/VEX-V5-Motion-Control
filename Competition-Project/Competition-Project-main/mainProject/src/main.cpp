@@ -100,6 +100,10 @@ void autonomous(void) {
             doinker.close();
             // ... rest of routine
             break;
+        case 2: //No Auto
+
+
+        break;
 
         case 3: // Red 4 Ring
             driveFor(-19, Config::drivekP, Config::drivekD, Config::drivekI, 0, Config::drive_settle_error, 100, 500, 0, 9);
@@ -112,10 +116,6 @@ void autonomous(void) {
         case 4: // Blue 4 Ring
             driveFor(-21, Config::drivekP, Config::drivekD, Config::drivekI, 0, Config::drive_settle_error, 50, 1000, 0, 9);
             // ... rest of routine
-            break;
-
-        default:
-            // Placeholder for Case 2 or Case 5
             break;
     }
 }
